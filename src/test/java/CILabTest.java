@@ -26,6 +26,13 @@ public class CILabTest {
         //Assert
         assertEquals("Hello", myString.getString());
     }
+
+    @Test
+    public void testGetStringNull() {
+
+        //Assert
+        assertEquals(null, myString.getString());
+    }
     @Test
     public void detectCapitalUseTest1() {
        fail("Not yet implemented");

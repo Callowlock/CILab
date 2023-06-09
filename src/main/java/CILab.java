@@ -2,7 +2,7 @@ public class CILab implements CILabInterface {
     private String myString;
 
     public void CILab() {
-        myString = "";
+        myString = null;
     }
     @Override
     public String getString() {
