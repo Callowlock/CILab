@@ -1,6 +1,9 @@
 public class CILab implements CILabInterface {
     private String myString;
 
+    public void CILab() {
+        myString = "";
+    }
     @Override
     public String getString() {
         return myString;

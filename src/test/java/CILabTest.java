@@ -2,6 +2,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
 
 public class CILabTest {
@@ -18,6 +19,13 @@ public class CILabTest {
         myString = null;
     }
 
+    @Test
+    public void testGetString() {
+        myString.setString("Hello");
+
+        //Assert
+        assertEquals("Hello", myString.getString());
+    }
     @Test
     public void detectCapitalUseTest1() {
        fail("Not yet implemented");
