@@ -18,11 +18,11 @@ public class CILab implements CILabInterface {
     public boolean detectCapitalUse() {
         String tempFirstLetter = this.myString.substring(0,1);
 
-        if(this.myString == this.myString.toUpperCase()) {
+        if(this.myString.equals(this.myString.toUpperCase())) {
             return true;
-        } else if(this.myString == this.myString.toLowerCase()) {
+        } else if(this.myString.equals(this.myString.toLowerCase())) {
             return true;
-        } else if(tempFirstLetter == tempFirstLetter.toUpperCase() && containsUpper(myString.substring(1, myString.length()))) {
+        } else if(tempFirstLetter.equals(tempFirstLetter.toUpperCase()) && !containsUpper(myString.substring(1, myString.length()))) {
             return true;
         }
         return false;
