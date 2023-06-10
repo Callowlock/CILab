@@ -40,13 +40,19 @@ public class CILabTest {
     }
     @Test
     public void detectCapitalUseTest2() {
-        fail("Not yet implemented");
+        myString.setString("Chalupa");
+        assertTrue(myString.detectCapitalUse());
     }
 
     @Test
     public void detectCapitalUseTest3() {
-        fail("Not yet implemented");
+        myString.setString("burrito");
+        assertTrue(myString.detectCapitalUse());
     }
 
-
+    @Test
+    public void detectCapitalUseTest4() {
+        myString.setString("ChimIchAnGa");
+        assertFalse(myString.detectCapitalUse());
+    }
 }
